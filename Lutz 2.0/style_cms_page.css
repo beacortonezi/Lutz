@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
+
+:root{
+  --padding-arejamento: 3rem;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+  height: 100vh;
+}
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+#formulario-noticia{
+	padding: var(--padding-arejamento);
+}
+
+#formulario-noticia h1{
+	font-size: 35px;
+	font-weight: 700;
+}
+
+form input{
+	height: 1.5rem;
+}
+
+form textarea{
+	height: 4rem;
+}
+
+form input, form textarea{
+	display: block;
+	outline: none; 
+	width: 80vw;
+	resize: none;
+	margin-bottom: 1rem;
+}
+
+label{
+	font-size: 20px;
+	font-weight: 400;
+}
+
+#btn-postar{
+	padding: 1rem 1rem;
+	border: none;
+	width: 40vw;
+	height: 35px;
+	font-size: 17px;
+	border-radius: 10px;
+	background: red;
+}
