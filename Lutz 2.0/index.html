@@ -4,7 +4,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style_cms_page.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Lutz</title>
 </head>
 <body>
@@ -36,28 +36,40 @@
             </div>            
         </div>           
         <nav class ="hidden">
-            <a href="#" id="close"> X </a>
+			<a href="#" id="close"> X </a>
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="sobre.html">Sobre</a></li>
-              <li><a href="cms_page.html">Página Administrador</a></li>
+			  <li><a href="sobre.html">Sobre</a></li>
+			  <li><a href="cms_page.html">Página Administrador</a></li>
             </ul>
         </nav>
 	</header>
 
 	<main>
-		<h1>Escreva sua notícia</h1>
-		<form class="form_cms">
-	 		<label for="titulo">Título</label><input type="text" id="titulo"/>
-	 		<label for="descricao">Descrição</label><textarea id="descricao"></textarea> 
-	 		<label for="autor">Autor</label><input type="text" id="autor"/>
-	 		<label for="data">Data</label><input type="date" id="data"/>
-	 		<label for="noticia">Notícia</label><textarea id="noticia"></textarea> 
-	 		<label for="frase_destaque">Frase destaque</label><textarea id="frase_destaque"></textarea> 
-	 		<button id="btn_postar" onclick="postar()"><p class="p_btn">Postar</p></button>
-	 	</form>	 	
-    </main>
+	    <section id="home">
+	        <a href="noticia1.html">
+	            <div id="noticia1" class="display_noticia">
+	                <h1 id="texto_noticia">Título</h1>
+	                <p id="texto_d_noticia">Descrição</p>
+	                <img class="display_img" id="img_noticia" src="lutz-assets/imagem.jpeg">
+	            </div>
+	        </a>
+	        <a href="noticia2.html">
+		        <div id="noticia2" class="display_noticia">
+		            <h1 id="texto_noticia">Título</h1>
+		            <p id="texto_d_noticia">Descrição</p>
+		            <img class="display_img" id="img_noticia" src="lutz-assets/imagem1.jpeg">
+		        </div>
+	        </a>
+	        <a href="noticia3.html">
+		        <div id="noticia3" class="display_noticia">
+		            <h1 id="texto_noticia">Título</h1>
+		            <p id="texto_d_noticia">Descrição</p>
+		            <img class="display_img" id="img_noticia" src="lutz-assets/imagem3.jpeg">
+		        </div>
+	        </a>
+	    </section>
+	</main>
 <script type="text/javascript" src="js/menu_deslizante.js"></script>
-<script type="text/javascript" src="js/cms_page.js"></script>
 </body>
 </html>

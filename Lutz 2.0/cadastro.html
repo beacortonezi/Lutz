@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style_cadastro.css">
+	<title>Lutz</title>
+</head>
+<body>
+	<header>
+	        <div id="cabecalho_all">               
+	            <div id="cabecalho_1">
+	                <div id="menu-bar">
+	                    <a id="btn" href="#">
+	                        <div id="menu-icon">
+		                        <div id="linha-1"></div>
+		                        <div id="linha-2"></div>
+		                        <div id="linha-3"></div>
+	                        </div>    
+	                    </a>     
+	                </div>
+	                <div  id="logo">
+	                    <img src="lutz-assets/logo.png">
+	                </div> 
+	                <div id="pessoa">
+	                	<a id="login" href="login.html"><img src="lutz-assets/pessoa.png"></a>
+	                </div>               
+	            </div>
+	            
+	            <div id="cabecalho_2">
+	                <a href="https://facebook.com" target="_blank"><img id="face" height="25px" width="25px" src="lutz-assets/face.png"></a>
+	                <a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img id="insta" height="25px" width="25px" src="lutz-assets/insta.png"></a>
+	                <a href="https://www.snapchat.com/l/pt-br/" target="_blank"><img id="snap"  height="25px" width="25px" src="lutz-assets/snap.png"></a>
+	                <a href="https://twitter.com" target="_blank"><img id="twitter"  height="25px" width="25px" src="lutz-assets/twitter.png"></a>
+	            </div>            
+	        </div>           
+	        <nav class ="hidden">
+				<a href="#" id="close"> X </a>
+	            <ul>
+	              <li><a href="index.html">Home</a></li>
+				  <li><a href="sobre.html">Sobre</a></li>
+				  <li><a href="cms_page.html">Página Administrador</a></li>
+	            </ul>
+	        </nav>
+    </header>
+    
+    <main class="form_cadastro">
+        <h1>Faça seu cadastro</h1>
+        <label>Nome completo</label><input type="text" id="nome" placeholder="Digite seu nome completo"></input>
+        <label>E-mail</label><input type="text" id="email_adm" placeholder="Digite seu e-mail"></input>
+        <label>Senha</label><input type="password" id="senha_adm" placeholder="Digite sua senha"></input>
+        <label>Confirmar senha</label><input type="password" id="conf_senha_adm" placeholder="Confirme sua senha"></input>
+        <button id="btn_cadastrar" onclick="cadastrar()"><p class="p_btn">Cadastrar</p></button>
+	</main>
+<script type="text/javascript" src="js/menu_deslizante.js"></script>
+<script type="text/javascript" src="js/cadastro.js"></script>
+</body>
+</html>

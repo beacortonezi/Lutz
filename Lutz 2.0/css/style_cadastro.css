@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
+
+:root{
+	--cor-texto: #121212;
+	--cor-texto-branco: #FEFEFE;
+	--padding-arejamento: 3rem;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+  height: 100vh;
+}
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	justify-content: center;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*estilo menu-icon*/ 
+#btn{
+	display: block;
+}
+
+#menu-icon{
+	height: 25px;
+	line-height: 6rem;
+	width: 40px;
+}
+
+#menu-icon [id^="linha"]{
+	background: var(--cor-texto);
+	border-radius: 5px;
+	height: 5px;
+	margin-bottom: 5px;
+	width: 100%;  
+}
+
+#menu-icon [id^="linha"]:last-of-type{
+	margin-bottom: 0;
+}
+
+/* menu deslizante */
+header{
+	position: relative;
+	transition: all ease-in-out 0.5s;
+}
+
+nav{
+	background: rgb(0, 0, 0);
+	height: 100%;
+	left: 0;  
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	transition: all ease-in-out .4s;
+	z-index: 9999;
+}
+
+nav ul{
+	list-style: none;
+	padding: 2rem;
+}
+
+nav li{
+	padding: 1rem 0;
+}
+
+nav a{
+	color: var(--cor-texto-branco);
+	display: block;
+	text-decoration: none;
+}
+
+nav.hidden{
+	overflow: hidden;
+	width: 0;
+}
+
+nav.active{
+	width: 50vw;
+}
+
+/* botão menu deslizante */
+#close{
+	font-size: 1.5rem;
+	position: absolute;
+	right: 2rem;
+	top: 2rem;
+}
+
+/* cabeçalhos sendo alinhados */
+#cabecalho_all{
+	align-items: center;
+}
+
+#cabecalho_1{
+	display: flex;
+	align-items: center;
+	padding: 2rem 2rem 0 2rem;
+}
+
+#logo{
+	display: flex;
+	flex: 1;
+	justify-content: center;
+}
+
+#pessoa img{
+	height: 40px;
+}
+
+/* cabeçalho secundário sendo alinhado */
+#cabecalho_2{
+	display: flex;
+  	justify-content: center;
+}
+
+#face{
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+#insta{
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+#snap{
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+#twitter{
+	margin-top: 5px;
+}
+
+/*ajustando inputs do cadastro*/
+h1{
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 0.5rem;
+}
+
+.form_cadastro{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+input{
+	height: 1.5rem;
+	outline: none; 
+	width: 80vw;
+	margin-bottom: 1rem;
+}
+
+label{
+	font-size: 20px;
+	font-weight: 400;
+}
+
+#btn_cadastrar{
+	padding: 0.5rem 0.5rem;
+	border: none;
+	width: 40vw;
+	height: 35px;
+	border-radius: 10px;
+	background: black;
+	display: flex;
+	justify-content: center;
+} 
+
+.p_btn{
+	color: white;
+	font-size: 17px;
+}

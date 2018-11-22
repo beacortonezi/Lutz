@@ -1,0 +1,4 @@
+[2018-06-22 15:08:12] layer "Logo.png": Duplicate path: Logo.png
+[2018-06-22 15:08:12] layer "imagem.jpeg": Duplicate path: imagem.jpeg
+[2018-06-22 15:08:12] layer "Logo.png": Duplicate path: Logo.png
+[2018-06-22 15:08:12] layer "Logo.png": Duplicate path: Logo.png
